@@ -89,3 +89,8 @@ body {
 .blog-post div {
   font-size: 22px;
 }
+
+.source{
+  font-style: italic;
+  font-weight: 100;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's in a URL?</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <div class="header"> 
+      <div>Evan's Static HTML/CSS Blog (Prequel to a Java Blog)</div>
+    </div>
+    
+    <div class="content">
+      <div class="sidebar">
+        <ul>
+          <li><a href="../index.html" style="color: lightgreen;">👌🏽 - Blog Home</a></li>
+        </ul>
+      </div>
+
+      <div class="blog-post-content">
+        <h3>What's in a URL?</h3>
+        <!-- You should also rename the title at the top to this title -->
+        <div class="blog-post">
+          <div>I think one piece of the technology stack often overlooked is the URL. A clean and short URL can be so valuable, but what if there was more to it?</div>
+          <div>Take a look at this image here. I want you to ask yourself, are there any parts of this that I don't know? There's no test, just keep it in mind. </div>
+          <div>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210625160610/urldiag.PNG">
+          </div>
+          <div>If I were to guess the parts of a URL that most people don't know the name of, it would be as follows:</div>
+          <div>
+            <ol>
+              <li>Fragment</li>
+              <li>Query String Separator</li>
+              <li>Scheme</li>
+              <li>Query String</li>
+            </ol>
+          </div>
+          <div>The most interesting one here is probably the Fragment. Lets learn a bit about it.</div>
+          <div>The Fragment specifies a location <em>within</em> a page. So you might go to the page, but this dictates where on that page you will open up to.</div>
+          <div>Name Attributes of HTML elements are the actual data points searched for with the fragment value. The easiest example is the element ID. ID is an HTMl element attribute that you can set, but you can only set an ID to one and only one element on a single page.</div>
+          <div>Now you can also use the fragment to select certain characters or lines which is pretty cool, but thats neither here nor there.</div>
+          <div>One of the most interesting things about fragments, is that all of the searching is done client-side. This means that your browser doesn't actually make a request to the web server for that specific element name. What the browser does instead is make a call for the full html file, but then once it receives the response back, it does the searching locally.</div>
+          <div>If you change the fragment, it doesn't result in a reload because its all local, but it is supposed to add an entry in your browser history showing that you visited the URL with that fragment.</div>
+          <div>One last cool thing:</div>
+          <div>If you are in Chrome or Edge(these are the only two browsers I have tested this in), select/highlight some text on the page, then right click and select "Copy Link to Highlight". This will use some wizardry to select text through an element content search instead of an attribute search and then actually modify the style of the text as well to show a highlight. Really cool feature for sending pages to somebody with specific information to show. </div>
+          <div>Want to learn more? Feel free to dig into any of these sources. Let me know if I missed something major... I'd like to know! I'm really curious how these can be used in web app pentesting. Probably not much, since its all client side. Darn it all. </div>
+          
+          <div><br><br></div>
+          <div class="source">Source: https://www.geeksforgeeks.org/components-of-a-url/</div>
+          <div class="source">Source: https://blog.httpwatch.com/2011/03/01/6-things-you-should-know-about-fragment-urls/</div>
+          <div class="source">Source: https://en.wikipedia.org/wiki/URI_fragment</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div>Thank you for Reading my Thoughts. Please reach out to talk about any of it ❤️</div>
+    </div>
+  </body>
+</html>
